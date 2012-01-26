@@ -11,17 +11,17 @@
 
 <title><g:layoutTitle default='Security Management Console'/></title>
 
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'reset.css',plugin:'spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'reset.css',plugin:'mapc-spring-security-ui')}"/>
 <g:javascript library='jquery' plugin='jquery' />
 <jqui:resources />
-<link rel="stylesheet" media="screen" href="${resource(dir:'css/smoothness',file:'jquery-ui-1.8.2.custom.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jgrowl.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.safari-checkbox.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'date_input.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jdMenu.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jdMenu.slate.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'table.css',plugin:'spring-security-ui')}"/>
-<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'spring-security-ui.css',plugin:'spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css/smoothness',file:'jquery-ui-1.8.2.custom.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jgrowl.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.safari-checkbox.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'date_input.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jdMenu.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jdMenu.slate.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'table.css',plugin:'mapc-spring-security-ui')}"/>
+<link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'mapc-spring-security-ui.css',plugin:'mapc-spring-security-ui')}"/>
 
 <%-- tab icons --%>
 <style>
@@ -134,6 +134,11 @@
 					<li><g:link action='providers' controller='securityInfo'><g:message code='spring.security.ui.menu.appinfo.providers'/></g:link></li>
 					</ul>
 				</li>
+				<li><a class="accessible">Exit</a>
+					<ul>
+						<li><a href="${createLink(uri: '/')}">Exit Admin Panel</a></li>
+					</ul>
+				</li>
 			</ul>
 
 			<div id='s2ui_header_body'>
@@ -168,21 +173,21 @@
 
 		<div id="s2ui_main">
 			<div id="s2ui_content">
-				<g:javascript src='jquery/jquery.jgrowl.js' plugin='spring-security-ui'/>
-				<g:javascript src='jquery/jquery.checkbox.js' plugin='spring-security-ui'/>
-				<g:javascript src='jquery/jquery.date_input.js' plugin='spring-security-ui'/>
-				<g:javascript src='jquery/jquery.positionBy.js' plugin='spring-security-ui'/>
-				<g:javascript src='jquery/jquery.bgiframe.js' plugin='spring-security-ui'/>
-				<g:javascript src='jquery/jquery.jdMenu.js' plugin='spring-security-ui'/>
-				<g:javascript src='jquery/jquery.dataTables.min.js' plugin='spring-security-ui'/>
-				<g:javascript src='spring-security-ui.js' plugin='spring-security-ui'/>
+				<g:javascript src='jquery/jquery.jgrowl.js' plugin='mapc-spring-security-ui'/>
+				<g:javascript src='jquery/jquery.checkbox.js' plugin='mapc-pring-security-ui'/>
+				<g:javascript src='jquery/jquery.date_input.js' plugin='mapc-spring-security-ui'/>
+				<g:javascript src='jquery/jquery.positionBy.js' plugin='mapc-spring-security-ui'/>
+				<g:javascript src='jquery/jquery.bgiframe.js' plugin='mapc-spring-security-ui'/>
+				<g:javascript src='jquery/jquery.jdMenu.js' plugin='mapc-spring-security-ui'/>
+				<g:javascript src='jquery/jquery.dataTables.min.js' plugin='mapc-spring-security-ui'/>
+				<g:javascript src='spring-security-ui.js' plugin='mapc-spring-security-ui'/>
 				<g:layoutBody/>
 			</div>
 		</div>
 
 	</div>
 
-<g:render template='/includes/ajaxLogin' plugin='spring-security-ui'/>
+<g:render template='/includes/ajaxLogin' plugin='mapc-spring-security-ui'/>
 
 <s2ui:showFlash/>
 
