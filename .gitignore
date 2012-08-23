@@ -4,3 +4,5 @@
 /grails-spring-security-ui-*.zip
 /target
 
+
+/target-eclipse/
