@@ -230,11 +230,11 @@ class SecurityUiTagLib {
 	def initCheckboxes = { attrs ->
 		out << """
 			\$('input:checkbox:not([safari])').checkbox({
-				empty: '${resource(dir: 'images', file: 'empty.png', plugin:'spring-security-ui')}',
+				empty: '${resource(dir: 'images', file: 'empty.png', plugin:'mapc-spring-security-ui')}',
 				cls: 'jquery-safari-checkbox'
 			});
 			\$('input:radio:not([safari])').checkbox({
-				empty: '${resource(dir: 'images', file: 'empty.png', plugin:'spring-security-ui')}',
+				empty: '${resource(dir: 'images', file: 'empty.png', plugin:'mapc-spring-security-ui')}',
 				cls: 'jquery-safari-checkbox'
 			});
 		"""

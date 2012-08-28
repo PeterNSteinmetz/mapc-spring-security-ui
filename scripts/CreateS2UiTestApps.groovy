@@ -46,7 +46,7 @@ private void init(String name, config) {
 		die "pluginVersion wasn't specified for config '$name'"
 	}
 
-	pluginZip = new File(basedir, "grails-spring-security-ui-${pluginVersion}.zip")
+	pluginZip = new File(basedir, "grails-mapc-spring-security-ui-${pluginVersion}.zip")
 	if (!pluginZip.exists()) {
 		die "plugin $pluginZip.absolutePath not found"
 	}
@@ -57,7 +57,7 @@ private void init(String name, config) {
 	}
 
 	projectDir = config.projectDir
-	appName = 'spring-security-ui-test-' + name
+	appName = 'mapc-spring-security-ui-test-' + name
 	testprojectRoot = "$projectDir/$appName"
 	dotGrails = config.dotGrails
 }
